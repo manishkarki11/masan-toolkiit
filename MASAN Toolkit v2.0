@@ -1,0 +1,44 @@
+# MASAN Toolkit v2.0
+
+MASAN Toolkit is an open-source, ethical cybersecurity toolkit for red teamers, penetration testers, and security researchers. This release includes CLI and Web UI support, built-in payload generation, proxy scraping, infrastructure detection, and more.
+
+## 🚀 Features
+- Website path scanner (common admin/backup/config files)
+- Async HTTP/SOCKS proxy scraper with validation
+- IP & domain geolocation lookup (via ip-api)
+- Reverse shell generator (sandbox-safe)
+- HTTP stress tester for load testing on owned servers
+- Infrastructure detector (Cloudflare, AWS, Google, etc.)
+- Web dashboard built with Flask (interactive)
+- Modular CLI with argparse
+
+## 🧩 Modules Included
+- `scanner.py`
+- `proxy_scraper.py`
+- `ip_lookup_tool.py`
+- `reverse_shell_generator.py`
+- `http_stress_test.py`
+- `infra_detector.py`
+
+## 🛠 How to Use
+Run tools via CLI:
+```bash
+python cli_main.py scanner --target example.com
+python cli_main.py proxy
+python cli_main.py lookup --target 8.8.8.8
+python cli_main.py stress --target http://localhost
+python cli_main.py infra --target amazon.com
+```
+
+Or launch the web interface:
+```bash
+python web_dashboard.py
+# Navigate to http://localhost:5000
+```
+
+## ⚠️ Disclaimer
+This toolkit is for **authorized testing, research, and education only**. You are responsible for all usage.
+
+## 📄 License
+MIT — Free to use, modify, and distribute.
+
